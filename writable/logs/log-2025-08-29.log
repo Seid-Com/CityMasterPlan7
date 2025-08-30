@@ -1,0 +1,340 @@
+CRITICAL - 2025-08-29 12:10:11 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "/home/runner/workspace/writable/cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH/Cache/Handlers/FileHandler.php on line 66.
+ 1 SYSTEMPATH/Cache/Handlers/FileHandler.php(66): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('/home/runner/workspace/writable/cache/')
+ 2 SYSTEMPATH/Cache/CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH/Config/Services.php(129): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH/Config/Services.php(124): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH/Config/BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH/Config/Services.php(454): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH/Config/Services.php(450): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH/CodeIgniter.php(178): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH/Config/Services.php(164): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH/Config/Services.php(159): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH/Config/BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [])
+21 SYSTEMPATH/Common.php(995): CodeIgniter\Config\BaseService::get('codeigniter')
+22 SYSTEMPATH/Boot.php(349): service('codeigniter')
+23 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::initializeCodeIgniter()
+24 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-29 12:10:34 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "/home/runner/workspace/writable/cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH/Cache/Handlers/FileHandler.php on line 66.
+ 1 SYSTEMPATH/Cache/Handlers/FileHandler.php(66): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('/home/runner/workspace/writable/cache/')
+ 2 SYSTEMPATH/Cache/CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH/Config/Services.php(129): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH/Config/Services.php(124): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH/Config/BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH/Config/Services.php(454): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH/Config/Services.php(450): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH/CodeIgniter.php(178): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH/Config/Services.php(164): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH/Config/Services.php(159): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH/Config/BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [])
+21 SYSTEMPATH/Common.php(995): CodeIgniter\Config\BaseService::get('codeigniter')
+22 SYSTEMPATH/Boot.php(349): service('codeigniter')
+23 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::initializeCodeIgniter()
+24 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-29 12:10:45 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "/home/runner/workspace/writable/cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH/Cache/Handlers/FileHandler.php on line 66.
+ 1 SYSTEMPATH/Cache/Handlers/FileHandler.php(66): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('/home/runner/workspace/writable/cache/')
+ 2 SYSTEMPATH/Cache/CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH/Config/Services.php(129): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH/Config/Services.php(124): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH/Config/BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH/Config/Services.php(454): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH/Config/Services.php(450): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH/CodeIgniter.php(178): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH/Config/Services.php(164): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH/Config/BaseService.php(312): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH/Config/BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH/Config/Services.php(159): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH/Config/BaseService.php(321): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH/Config/BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [])
+21 SYSTEMPATH/Common.php(995): CodeIgniter\Config\BaseService::get('codeigniter')
+22 SYSTEMPATH/Boot.php(349): service('codeigniter')
+23 SYSTEMPATH/Boot.php(67): CodeIgniter\Boot::initializeCodeIgniter()
+24 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-08-29 13:47:31 --> Upload error: Failed to process shapefile: PHP Shapefile reading failed: Missing required .dbf file. Shapefiles require .shp, .dbf, and .shx files together. Please upload all files in a ZIP archive.
+ERROR - 2025-08-29 13:47:40 --> Upload error: Failed to process shapefile: PHP Shapefile reading failed: Missing required .dbf file. Shapefiles require .shp, .dbf, and .shx files together. Please upload all files in a ZIP archive.
+ERROR - 2025-08-29 13:58:00 --> Upload error: Failed to process shapefile: PHP Shapefile reading failed: Missing required .dbf file. Shapefiles require .shp, .dbf, and .shx files together. Please upload all files in a ZIP archive.
+INFO - 2025-08-29 13:58:18 --> Processing shapefile: /home/runner/workspace/writable/uploads/extracted_1756475898/test.shp
+INFO - 2025-08-29 13:58:18 --> File size: 15 bytes
+INFO - 2025-08-29 13:58:18 --> File permissions: 0644
+CRITICAL - 2025-08-29 13:58:18 --> TypeError: current(): Argument #1 ($array) must be of type array, bool given
+[Method: POST, Route: api/upload/shapefile]
+in VENDORPATH/gasparesganga/php-shapefile/src/Shapefile/ShapefileReader.php on line 301.
+ 1 VENDORPATH/gasparesganga/php-shapefile/src/Shapefile/ShapefileReader.php(301): current(false)
+ 2 VENDORPATH/gasparesganga/php-shapefile/src/Shapefile/ShapefileReader.php(364): Shapefile\ShapefileReader->readInt32L('shp')
+ 3 VENDORPATH/gasparesganga/php-shapefile/src/Shapefile/ShapefileReader.php(135): Shapefile\ShapefileReader->readSHPHeader()
+ 4 APPPATH/Controllers/Upload.php(445): Shapefile\ShapefileReader->__construct('/home/runner/workspace/writable/uploads/extracted_1756475898/test.shp', [...])
+ 5 APPPATH/Controllers/Upload.php(251): App\Controllers\Upload->readShapefileWithPHP('/home/runner/workspace/writable/uploads/extracted_1756475898/test.shp')
+ 6 APPPATH/Controllers/Upload.php(126): App\Controllers\Upload->processShapefileData('/home/runner/workspace/writable/uploads/extracted_1756475898/test.shp', 'zip')
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Upload->processShapefile()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Upload))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-29 13:58:50 --> Processing shapefile: /home/runner/workspace/writable/uploads/extracted_1756475930/test.shp
+INFO - 2025-08-29 13:58:50 --> File size: 15 bytes
+INFO - 2025-08-29 13:58:50 --> File permissions: 0644
+CRITICAL - 2025-08-29 13:58:50 --> TypeError: current(): Argument #1 ($array) must be of type array, bool given
+[Method: POST, Route: api/upload/shapefile]
+in VENDORPATH/gasparesganga/php-shapefile/src/Shapefile/ShapefileReader.php on line 301.
+ 1 VENDORPATH/gasparesganga/php-shapefile/src/Shapefile/ShapefileReader.php(301): current(false)
+ 2 VENDORPATH/gasparesganga/php-shapefile/src/Shapefile/ShapefileReader.php(364): Shapefile\ShapefileReader->readInt32L('shp')
+ 3 VENDORPATH/gasparesganga/php-shapefile/src/Shapefile/ShapefileReader.php(135): Shapefile\ShapefileReader->readSHPHeader()
+ 4 APPPATH/Controllers/Upload.php(445): Shapefile\ShapefileReader->__construct('/home/runner/workspace/writable/uploads/extracted_1756475930/test.shp', [...])
+ 5 APPPATH/Controllers/Upload.php(251): App\Controllers\Upload->readShapefileWithPHP('/home/runner/workspace/writable/uploads/extracted_1756475930/test.shp')
+ 6 APPPATH/Controllers/Upload.php(126): App\Controllers\Upload->processShapefileData('/home/runner/workspace/writable/uploads/extracted_1756475930/test.shp', 'zip')
+ 7 SYSTEMPATH/CodeIgniter.php(933): App\Controllers\Upload->processShapefile()
+ 8 SYSTEMPATH/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Upload))
+ 9 SYSTEMPATH/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH/Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-29 13:59:17 --> Processing shapefile: /home/runner/workspace/writable/uploads/extracted_1756475957/test.shp
+INFO - 2025-08-29 13:59:17 --> File size: 15 bytes
+INFO - 2025-08-29 13:59:17 --> File permissions: 0644
+ERROR - 2025-08-29 13:59:17 --> Upload error: Invalid shapefile format. The uploaded file appears to be corrupted or not a valid shapefile. Please ensure you are uploading shapefiles created by GIS software.
+ERROR - 2025-08-29 16:18:14 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: json || jsonb
+LINE 18:                             ) || COALESCE(properties, '{}'::...
+                                       ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 /home/runner/workspace/app/Controllers/Api.php(29): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api->parcels()
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-08-29 16:18:34 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: json || jsonb
+LINE 18:                             ) || COALESCE(properties, '{}'::...
+                                       ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 /home/runner/workspace/app/Controllers/Api.php(29): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api->parcels()
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-08-29 16:18:40 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: json || jsonb
+LINE 18:                             ) || COALESCE(properties, '{}'::...
+                                       ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 /home/runner/workspace/app/Controllers/Api.php(29): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api->parcels()
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-08-29 16:19:07 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: json || jsonb
+LINE 18:                             ) || COALESCE(properties, '{}'::...
+                                       ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 /home/runner/workspace/app/Controllers/Api.php(29): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api->parcels()
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-08-29 16:26:29 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: json || jsonb
+LINE 18:                             ) || COALESCE(properties, '{}'::...
+                                       ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 /home/runner/workspace/app/Controllers/Api.php(29): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api->parcels()
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-08-29 16:29:27 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: json || jsonb
+LINE 18:                             ) || COALESCE(c.new_data, '{}'::...
+                                       ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 /home/runner/workspace/app/Controllers/Api.php(326): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api->getChanges()
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-08-29 16:29:27 --> Error in getChanges: pg_query(): Query failed: ERROR:  operator does not exist: json || jsonb
+LINE 18:                             ) || COALESCE(c.new_data, '{}'::...
+                                       ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+ERROR - 2025-08-29 16:32:34 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: json || jsonb
+LINE 18:                             ) || COALESCE(c.new_data, '{}'::...
+                                       ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 /home/runner/workspace/app/Controllers/Api.php(326): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api->getChanges()
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-08-29 16:32:34 --> Error in getChanges: pg_query(): Query failed: ERROR:  operator does not exist: json || jsonb
+LINE 18:                             ) || COALESCE(c.new_data, '{}'::...
+                                       ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+ERROR - 2025-08-29 16:33:17 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: json || jsonb
+LINE 18:                             ) || COALESCE(properties, '{}'::...
+                                       ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 /home/runner/workspace/app/Controllers/Api.php(29): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api->parcels()
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-08-29 16:33:19 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: json || jsonb
+LINE 18:                             ) || COALESCE(properties, '{}'::...
+                                       ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 /home/runner/workspace/app/Controllers/Api.php(29): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api->parcels()
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-08-29 16:34:03 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: json || jsonb
+LINE 18:                             ) || COALESCE(properties, '{}'::...
+                                       ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 /home/runner/workspace/app/Controllers/Api.php(29): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api->parcels()
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-08-29 16:34:05 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: json || jsonb
+LINE 18:                             ) || COALESCE(properties, '{}'::...
+                                       ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 /home/runner/workspace/app/Controllers/Api.php(29): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api->parcels()
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-08-29 16:38:46 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: json || jsonb
+LINE 18:                             ) || COALESCE(c.new_data, '{}'::...
+                                       ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 /home/runner/workspace/app/Controllers/Api.php(313): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api->getChanges()
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-08-29 16:38:46 --> Error in getChanges: pg_query(): Query failed: ERROR:  operator does not exist: json || jsonb
+LINE 18:                             ) || COALESCE(c.new_data, '{}'::...
+                                       ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.

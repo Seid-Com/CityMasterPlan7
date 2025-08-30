@@ -1,0 +1,85 @@
+CREATE TABLE IF NOT EXISTS geostore.spartialdata
+(
+    id integer NOT NULL DEFAULT nextval('spartialdata_id_seq'::regclass),
+    geom geometry(MultiPolygon,20137),
+    objectid bigint,
+    owner_name character varying(50) COLLATE pg_catalog."default",
+    upin character varying(50) COLLATE pg_catalog."default",
+    region_cod character varying(2) COLLATE pg_catalog."default",
+    city_code character varying(3) COLLATE pg_catalog."default",
+    kebele_cod character varying(2) COLLATE pg_catalog."default",
+    nhd_code character varying(2) COLLATE pg_catalog."default",
+    block_code character varying(2) COLLATE pg_catalog."default",
+    parcel_cod character varying(3) COLLATE pg_catalog."default",
+    first_name character varying(50) COLLATE pg_catalog."default",
+    fathers_na character varying(50) COLLATE pg_catalog."default",
+    grandfathe character varying(50) COLLATE pg_catalog."default",
+    titledeed_ character varying(50) COLLATE pg_catalog."default",
+    land_acqui character varying(20) COLLATE pg_catalog."default",
+    acquisitio bigint,
+    land_tenur character varying(20) COLLATE pg_catalog."default",
+    landuse_ti character varying(50) COLLATE pg_catalog."default",
+    landuse_ex character varying(50) COLLATE pg_catalog."default",
+    area_m2_ti double precision,
+    area_m2_ta double precision,
+    last_tax_p bigint,
+    file_no character varying(5) COLLATE pg_catalog."default",
+    link_statu character varying(5) COLLATE pg_catalog."default",
+    area_diffe double precision,
+    associatio character varying(50) COLLATE pg_catalog."default",
+    fullname character varying(50) COLLATE pg_catalog."default",
+    file_type character varying(15) COLLATE pg_catalog."default",
+    shape_leng double precision,
+    shape_area double precision,
+    kentcode character varying(7) COLLATE pg_catalog."default",
+    ha double precision,
+    registerda date,
+    CONSTRAINT spartialdata_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS geostore.spartialdata
+    OWNER to postgres;
+
+GRANT ALL ON TABLE geostore.spartialdata TO postgres;
+-- Index: idx_spartialdata_geom
+
+-- DROP INDEX IF EXISTS geostore.idx_spartialdata_geom;
+
+CREATE INDEX IF NOT EXISTS idx_spartialdata_geom
+    ON geostore.spartialdata USING gist
+    (geom)
+    TABLESPACE pg_default;
+-- Index: idx_spartialdata_kentcode
+
+-- DROP INDEX IF EXISTS geostore.idx_spartialdata_kentcode;
+
+CREATE INDEX IF NOT EXISTS idx_spartialdata_kentcode
+    ON geostore.spartialdata USING btree
+    (kentcode COLLATE pg_catalog."default" ASC NULLS LAST)
+    TABLESPACE pg_default;
+-- Index: idx_spartialdata_landuse
+
+-- DROP INDEX IF EXISTS geostore.idx_spartialdata_landuse;
+
+CREATE INDEX IF NOT EXISTS idx_spartialdata_landuse
+    ON geostore.spartialdata USING btree
+    (landuse_ti COLLATE pg_catalog."default" ASC NULLS LAST)
+    TABLESPACE pg_default;
+-- Index: idx_spartialdata_owner_name
+
+-- DROP INDEX IF EXISTS geostore.idx_spartialdata_owner_name;
+
+CREATE INDEX IF NOT EXISTS idx_spartialdata_owner_name
+    ON geostore.spartialdata USING btree
+    (owner_name COLLATE pg_catalog."default" ASC NULLS LAST)
+    TABLESPACE pg_default;
+-- Index: idx_spartialdata_upin
+
+-- DROP INDEX IF EXISTS geostore.idx_spartialdata_upin;
+
+CREATE INDEX IF NOT EXISTS idx_spartialdata_upin
+    ON geostore.spartialdata USING btree
+    (upin COLLATE pg_catalog."default" ASC NULLS LAST)
+    TABLESPACE pg_default;

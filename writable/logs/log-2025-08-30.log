@@ -1,0 +1,20 @@
+ERROR - 2025-08-30 11:57:59 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;spatial_changes&quot; does not exist
+LINE 22:                 FROM spatial_changes c
+                              ^ in C:\xampp\htdocs\CityMasterPlan7\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', 'C:\\xampp\\htdocs...', 206)
+#1 C:\xampp\htdocs\CityMasterPlan7\vendor\codeigniter4\framework\system\Database\Postgre\Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 C:\xampp\htdocs\CityMasterPlan7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 C:\xampp\htdocs\CityMasterPlan7\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 C:\xampp\htdocs\CityMasterPlan7\app\Controllers\Api.php(313): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 C:\xampp\htdocs\CityMasterPlan7\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Api->getChanges()
+#6 C:\xampp\htdocs\CityMasterPlan7\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 C:\xampp\htdocs\CityMasterPlan7\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\CityMasterPlan7\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\CityMasterPlan7\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\CityMasterPlan7\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp\htdocs\CityMasterPlan7\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2025-08-30 11:57:59 --> Error in getChanges: pg_query(): Query failed: ERROR:  relation &quot;spatial_changes&quot; does not exist
+LINE 22:                 FROM spatial_changes c
+                              ^

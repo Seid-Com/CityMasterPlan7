@@ -1,0 +1,35 @@
+modules = ["php-8.2", "nodejs-20", "web", "postgresql-16"]
+[agent]
+expertMode = true
+
+[nix]
+channel = "stable-25_05"
+packages = ["gdal", "unzip", "php82", "php82Packages.composer", "postgresql", "zip"]
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "City Master Plan Server"
+
+[[workflows.workflow]]
+name = "City Master Plan Server"
+author = "agent"
+
+[workflows.workflow.metadata]
+outputType = "webview"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "php -S 0.0.0.0:5000 -t public"
+waitForPort = 5000
+
+[[ports]]
+localPort = 5000
+externalPort = 80

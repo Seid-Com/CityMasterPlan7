@@ -1,0 +1,15 @@
+# Ignore all .log files
+#*.log
+# Ignore the vendor directory
+#vendor/
+#system/
+# Ignore all files in the temp directory
+#writable/
+# Ignore all .env files
+#*.env
+# Ignore IDE directories and files
+#.idea/
+#.vscode/
+#public/receipt/
+#public/photos/
+#app/Config/Database.php

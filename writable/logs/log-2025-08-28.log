@@ -1,0 +1,92 @@
+ERROR - 2025-08-28 17:46:37 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;geostore.spartialdata_temp1&quot; does not exist
+LINE 24:                 FROM geostore.spartialdata_temp1
+                              ^ in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 /home/runner/workspace/app/Controllers/Api.php(297): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api->getChanges()
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-08-28 17:46:37 --> Error in getChanges: pg_query(): Query failed: ERROR:  relation &quot;geostore.spartialdata_temp1&quot; does not exist
+LINE 24:                 FROM geostore.spartialdata_temp1
+                              ^
+ERROR - 2025-08-28 17:46:58 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;geostore.spartialdata_temp1&quot; does not exist
+LINE 24:                 FROM geostore.spartialdata_temp1
+                              ^ in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 /home/runner/workspace/app/Controllers/Api.php(297): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Api->getChanges()
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+ERROR - 2025-08-28 17:46:58 --> Error in getChanges: pg_query(): Query failed: ERROR:  relation &quot;geostore.spartialdata_temp1&quot; does not exist
+LINE 24:                 FROM geostore.spartialdata_temp1
+                              ^
+ERROR - 2025-08-28 18:19:43 --> ErrorException: pg_query(): Query failed: ERROR:  schema &quot;geostore&quot; does not exist
+LINE 2:                 CREATE TABLE IF NOT EXISTS geostore.spartial...
+                                                   ^ in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n              ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n              ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n              ...')
+#4 /home/runner/workspace/app/Controllers/Upload.php(205): CodeIgniter\Database\BaseConnection->query('\n              ...')
+#5 /home/runner/workspace/app/Controllers/Upload.php(120): App\Controllers\Upload->createTempTable()
+#6 /home/runner/workspace/app/Controllers/Upload.php(83): App\Controllers\Upload->processShapefileData('/home/runner/wo...', 'zip')
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Upload->processShapefile()
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Upload))
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-08-28 18:19:43 --> Failed to create temp table: pg_query(): Query failed: ERROR:  schema &quot;geostore&quot; does not exist
+LINE 2:                 CREATE TABLE IF NOT EXISTS geostore.spartial...
+                                                   ^
+ERROR - 2025-08-28 18:19:43 --> ErrorException: pg_query(): Query failed: ERROR:  schema &quot;geostore&quot; does not exist in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), 'TRUNCATE TABLE ...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('TRUNCATE TABLE ...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('TRUNCATE TABLE ...')
+#4 /home/runner/workspace/app/Controllers/Upload.php(123): CodeIgniter\Database\BaseConnection->query('TRUNCATE TABLE ...')
+#5 /home/runner/workspace/app/Controllers/Upload.php(83): App\Controllers\Upload->processShapefileData('/home/runner/wo...', 'zip')
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(933): App\Controllers\Upload->processShapefile()
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Upload))
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /home/runner/workspace/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+ERROR - 2025-08-28 18:20:09 --> ErrorException: pg_query(): Query failed: ERROR:  type "geometry" does not exist
+LINE 5:                 geom geometry(MultiPolygon,20137),
+                             ^ in /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:206
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/home/runner/wo...', 206)
+#1 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(206): pg_query(Object(PgSql\Connection), '\n            CR...')
+#2 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(729): CodeIgniter\Database\Postgre\Connection->execute('\n            CR...')
+#3 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('\n            CR...')
+#4 /home/runner/workspace/app/Database/Migrations/2025-08-22-162500_CreateSpartialDataTable.php(59): CodeIgniter\Database\BaseConnection->query('\n            CR...')
+#5 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(876): App\Database\Migrations\CreateSpartialDataTable->up()
+#6 /home/runner/workspace/vendor/codeigniter4/framework/system/Database/MigrationRunner.php(182): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 /home/runner/workspace/vendor/codeigniter4/framework/system/Commands/Database/Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 /home/runner/workspace/vendor/codeigniter4/framework/system/CLI/Commands.php(74): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 /home/runner/workspace/vendor/codeigniter4/framework/system/CLI/Console.php(47): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(388): CodeIgniter\CLI\Console->run()
+#11 /home/runner/workspace/vendor/codeigniter4/framework/system/Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#12 /home/runner/workspace/spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#13 {main}
